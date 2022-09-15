@@ -3,10 +3,10 @@ infile = open('sometext.txt', 'r')
 word_count = {}
 
 # cleans up the text
-x = infile.read().replace('.','').replace(',','').lower()
+contents = infile.read().replace('.','').replace(',','').lower()
 
-for word in x.split():
-    word_count[word] = x.count(word)
+for word in contents.split():
+    word_count[word] = contents.count(word)
 
 # storing numbers in .txt file in the list to remove numbers later
 number_list = []
