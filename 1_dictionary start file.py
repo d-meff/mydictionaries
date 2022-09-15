@@ -121,14 +121,15 @@ print()
 print('*****  end section 6 ********')
 print()
 
-'''
+
 
 print()
 print('*****  start section 7 - using pop method ********')
 print()
 
 
-
+a = phonebook.pop('Chris', 'not found')
+print(a)
 
 
 
@@ -142,9 +143,8 @@ print()
 print('*****  start section 8 - using popitem ********')
 print()
 
-
-
-
+a = phonebook.popitem()
+print(a)
 
 
 print()
@@ -158,7 +158,7 @@ print('*****  start section 9 - using random and converting to list ********')
 print()
 
 
-
+print(random.choice(list(phonebook)), phonebook[random.choice(list(phonebook))])
 
 
 print()
@@ -166,7 +166,7 @@ print('*****  end section 9 ********')
 print()
 
 
-'''
+
 
 
 
